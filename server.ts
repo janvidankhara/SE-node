@@ -6,7 +6,7 @@ import UserController from "./controllers/UserController";
 import TuitController from "./controllers/TuitController";
 
 const app = express();
-app.use(bodyParser.json());
+app.use(express.json());
 app.get('/hello', (req: Request, res: Response) =>
     res.send('Hello World!'));
 
